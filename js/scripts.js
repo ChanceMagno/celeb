@@ -8,7 +8,7 @@ $(document).ready(function(){
     var totalScore = car + vacation + food;
 
     if (food === 0 || vacation === 0 || car === 0) {
-      alert("Please fill out the whole questionnaire before submitting");
+      $(".alert-danger").show();
 
     } else {
       if(totalScore <= 3){
